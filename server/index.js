@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 
-app.get('courses', (req, res) => {
+app.get('/courses', (req, res) => {
   let courses = [
     {
       "id": 1,
